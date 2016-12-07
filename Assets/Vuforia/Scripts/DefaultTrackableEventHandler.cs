@@ -83,6 +83,8 @@ namespace Vuforia
                 component.enabled = true;
             }
 
+			GameObject.Find ("Ball").GetComponent<BallScript> ().SpawnPlayer ();;
+
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 

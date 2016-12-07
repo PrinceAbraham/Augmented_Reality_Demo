@@ -16,9 +16,21 @@ public class BallScript : MonoBehaviour {
 	void Update () {
 		
 			//gameObject.transform.position = new Vector3 (gameObject.transform.position.x, 0.03f,gameObject.transform.position.z);
+//		Vector3 newVect = transform.position;
+//
+//		newVect.y = SpawnPoint.transform.position.y;
+//
+//		transform.position = newVect;
 
-		if (gameObject.transform.position.y < Floor.transform.position.y - 10f) {
+		if (gameObject.transform.position.y < Floor.transform.position.y - 5f) {
 			gameObject.transform.position = SpawnPoint.transform.position;
+			Debug.Log ("Went Behind Plank");
 		}
+		Debug.Log (gameObject.transform.position);
+	}
+
+	public void SpawnPlayer(){
+		gameObject.transform.position = SpawnPoint.transform.position;
+		Debug.Log ("Spawn Player");
 	}
 }
