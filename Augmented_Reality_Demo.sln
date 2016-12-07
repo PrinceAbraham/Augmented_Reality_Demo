@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{C4671E62-D42E-913E-DAEC-9A4C25EF7EF6}") = "Augmented_Reality_Demo", "Assembly-CSharp.csproj", "{D1877B30-79A2-4EB8-4319-01EAED83A22C}"
+EndProject
+Project("{C4671E62-D42E-913E-DAEC-9A4C25EF7EF6}") = "Augmented_Reality_Demo", "Assembly-CSharp-Editor.csproj", "{0580E8B1-9B3D-BD5F-4192-6D850411CA25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1877B30-79A2-4EB8-4319-01EAED83A22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1877B30-79A2-4EB8-4319-01EAED83A22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1877B30-79A2-4EB8-4319-01EAED83A22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1877B30-79A2-4EB8-4319-01EAED83A22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0580E8B1-9B3D-BD5F-4192-6D850411CA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0580E8B1-9B3D-BD5F-4192-6D850411CA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0580E8B1-9B3D-BD5F-4192-6D850411CA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0580E8B1-9B3D-BD5F-4192-6D850411CA25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
