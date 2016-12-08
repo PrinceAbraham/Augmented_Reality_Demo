@@ -6,10 +6,11 @@ public class BallScript : MonoBehaviour {
 
 	public GameObject Floor;
 	public GameObject SpawnPoint;
+	Collider gameCollider;
 
 	// Use this for initialization
 	void Start () {
-		
+		gameCollider = gameObject.GetComponent<Collider> ();
 	}
 	
 	// Update is called once per frame
@@ -22,15 +23,18 @@ public class BallScript : MonoBehaviour {
 //
 //		transform.position = newVect;
 
-		if (gameObject.transform.position.y < Floor.transform.position.y - 5f) {
+		if (gameObject.transform.position.y < Floor.transform.position.y - 10f) {
 			gameObject.transform.position = SpawnPoint.transform.position;
+			if (gameCollider.attachedRigidbody) {
+				gameCollider.attachedRigidbody.useGravity = false;
+			}
 			Debug.Log ("Went Behind Plank");
 		}
-		Debug.Log (gameObject.transform.position);
 	}
 
 	public void SpawnPlayer(){
 		gameObject.transform.position = SpawnPoint.transform.position;
+		gameCollider.attachedRigidbody.useGravity = true;
 		Debug.Log ("Spawn Player");
 	}
 }
